@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog App - Support</title>
+  <meta name="description" content="Dog App support page - Help, FAQs, and contact information">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Auto-redirect based on browser language
+    (function() {
+      const userLang = navigator.language || navigator.userLanguage;
+      const langCode = userLang.toLowerCase().split('-')[0];
+
+      // Redirect to Japanese page if browser language is Japanese
+      if (langCode === 'ja') {
+        window.location.href = './ja/index.html';
+      } else {
+        // Default to English for all other languages
+        window.location.href = './en/index.html';
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">🐕 Dog App</div>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <h1>Dog App Support</h1>
+      <p>Redirecting to the appropriate language page...</p>
+
+      <section class="lang-selection">
+        <a href="en/index.html" class="lang-option">English</a>
+        <a href="ja/index.html" class="lang-option">日本語</a>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dog App. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
